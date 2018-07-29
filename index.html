@@ -1,0 +1,20 @@
+---
+layout: default
+description: "A listing of demo scripts for the App Service in a box kit"
+---
+
+<!--{% capture welcome_content %} {% include welcome.md %} {% endcapture %}
+
+<section id="home">
+  {{ welcome_content | markdownify }}
+</section>
+<hr>-->
+
+{% for post in site.posts %}
+
+  <section>
+    {{ post.content }}
+  </section>
+  <hr>
+
+{% endfor %}
